@@ -17,7 +17,7 @@ describe('index.js', function () {
     // Calculate the total temperatures
     const temperature_in_fahrenheit = allTempsInFahrenheit.reduce((sum, temp) => sum + temp, 0);
     const temperature_in_celsius = allTempsInCelsius.reduce((sum, temp) => sum + temp, 0);
-    
+
     // Calculate mean of temperatures
     const meanCelsius = temperature_in_celsius / allTempsInCelsius.length;
     const meanFahrenheit = temperature_in_fahrenheit / allTempsInFahrenheit.length;
@@ -25,7 +25,7 @@ describe('index.js', function () {
     describe('tot_temperature_in_fahrenheit', function () {
         it('is a floating number', function () {
             float_check = tot_temperature_in_fahrenheit % 1 !== 0;
-            
+
             expect(tot_temperature_in_fahrenheit).to.be.a('number');
             expect(float_check).to.be.true;
         });
@@ -38,7 +38,7 @@ describe('index.js', function () {
     describe('tot_temperature_in_celsius', function () {
         it('is a floating number', function () {
             float_check = tot_temperature_in_celsius % 1 !== 0;
-            
+
             expect(tot_temperature_in_celsius).to.be.a('number');
             expect(float_check).to.be.true;
         });
@@ -51,7 +51,7 @@ describe('index.js', function () {
     describe('avg_temperature_in_fahrenheit', function () {
         it('is a floating number', function () {
             float_check = meanFahrenheit % 1 !== 0;
-            
+
             expect(avg_temperature_in_fahrenheit).to.be.a('number');
             expect(float_check).to.be.true;
         });
@@ -64,7 +64,7 @@ describe('index.js', function () {
     describe('avg_temperature_in_celsius', function () {
         it('is a floating number', function () {
             float_check = avg_temperature_in_celsius % 1 !== 0;
-            
+
             expect(avg_temperature_in_celsius).to.be.a('number');
             expect(float_check).to.be.true;
         });
@@ -74,4 +74,4 @@ describe('index.js', function () {
         });
     });
 
-});
+});                        
